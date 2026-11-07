@@ -62,9 +62,8 @@ not in git. Definitions are in `env/`.
 
 ## Close-out checklist
 
-- [ ] Raw data archived to cold storage; checksums verified
+- [ ] Raw data archived - e.g., to cold storage; checksums verified
 - [ ] Repo tagged (`git tag v1.0-submitted`)
-- [ ] Code deposited for DOI (Zenodo) and cited in manuscript
-- [ ] Data deposited (GEO / SRA / PRIDE / institutional repo) with accession recorded here
+- [ ] If manuscript: code deposited on Zenodo for DOI and cited in manuscript
+- [ ] If manuscript: data deposited (GEO / SRA / PRIDE / institutional repo) with accession recorded here
 - [ ] Reusable functions promoted to the lab tools package
-- [ ] Status set to *archived*
