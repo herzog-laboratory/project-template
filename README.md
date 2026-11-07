@@ -1,4 +1,4 @@
-# <Project name>
+# Project name
 
 > One-paragraph summary: biological question, data type, main approach.
 
@@ -29,12 +29,13 @@ Then run scripts in numerical order: `scripts/01_*.R`, `scripts/02_*.py`, ...
 
 ```
 scripts/   Numbered, annotated analysis steps. Run top to bottom.
+scripts/explore/  Exploratory analyses (or dead ends); kept, logged but not used in the end or published.
 src/       Reusable functions used by scripts (R/ and python/).
            If a function is needed in a second project, move it to the lab tools package.
 config/    config.yaml (gitignored, machine-specific paths) + committed .example
 env/       Environment definitions: renv.lock, environment.yml, Dockerfile, *.def
 reports/   Rmd / Quarto / notebooks for write-ups. Outputs are NOT committed.
-docs/      analysis_log.md (dated decisions), notes, protocols
+docs/      analysis_log.md (dated decisions; private), PUBLISHING.md (how to release code)
 data/      NEVER committed (gitignored). raw/ = working copy of backed-up original;
            interim/<NN_step>/ = output of script NN; processed/ = analysis-ready.
 results/   NEVER committed except small summary tables explicitly whitelisted.
@@ -62,8 +63,9 @@ not in git. Definitions are in `env/`.
 
 ## Close-out checklist
 
-- [ ] Raw data archived - e.g., to cold storage; checksums verified
+- [ ] Raw data archived to cold storage; checksums verified
 - [ ] Repo tagged (`git tag v1.0-submitted`)
-- [ ] If manuscript: code deposited on Zenodo for DOI and cited in manuscript
-- [ ] If manuscript: data deposited (GEO / SRA / PRIDE / institutional repo) with accession recorded here
 - [ ] Reusable functions promoted to the lab tools package
+- [ ] If publishing: clean public export made and checked per docs/PUBLISHING.md; DOI minted via Zenodo and cited
+- [ ] If publishing: data deposited (GEO / SRA / PRIDE / institutional repo) with accession recorded here
+- [ ] Status set to *archived*
