@@ -1,0 +1,15 @@
+# Alternative to environment.yml for pure-Python projects, managed with uv.
+# Move this file to the repo root to use it:  mv env/pyproject.toml . && uv sync
+[project]
+name = "yyyy-shortname"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "pyyaml",
+  "pandas",
+  "numpy",
+  "scipy",
+  "matplotlib",
+  "jupyterlab",
+  # "labtools-py @ git+https://github.com/<org>/labtools-py@v0.1.0",
+]

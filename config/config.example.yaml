@@ -1,0 +1,15 @@
+# Copy to config/config.yaml (gitignored) and edit for your machine.
+# Scripts must read paths from here; never hard-code them.
+# Default: data lives inside this project folder (gitignored). If you cloned the repo
+# elsewhere, set data_root to the canonical project folder on shared storage.
+project: YYYY-shortname
+paths:
+  data_root: data
+  raw: ${paths.data_root}/raw            # working copy; original is backed up separately
+  interim: ${paths.data_root}/interim    # one subfolder per script: 01_qc/, 02_normalise/ ...
+  processed: ${paths.data_root}/processed
+  results: results
+  containers: containers
+params:
+  seed: 42
+  threads: 8

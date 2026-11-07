@@ -1,0 +1,14 @@
+# conda env create -f env/environment.yml   (mamba/micromamba also work)
+name: YYYY-shortname
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - pyyaml
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - pip
+  # - pip:
+  #   - git+https://github.com/<org>/<lab-tools-py>@v0.1.0

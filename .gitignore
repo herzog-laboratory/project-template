@@ -1,0 +1,106 @@
+# ---------- DATA AND RESULTS: never committed ----------
+data/**
+!data/**/
+!data/README.md
+!data/**/.gitkeep
+results/**
+!results/**/
+!results/README.md
+!results/**/.gitkeep
+containers/**
+!containers/.gitkeep
+# Whitelist small summary tables explicitly, e.g.:
+# !results/tables/supp_table_1.csv
+
+# ---------- Common data / binary formats anywhere in the repo ----------
+*.csv
+*.tsv
+*.txt.gz
+*.xlsx
+*.xls
+*.rds
+*.RData
+*.rda
+*.feather
+*.parquet
+*.h5
+*.h5ad
+*.hdf5
+*.loom
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.fasta
+*.fa
+*.fa.gz
+*.bam
+*.sam
+*.cram
+*.bai
+*.vcf
+*.vcf.gz
+*.bed
+*.bigwig
+*.bw
+*.mtx
+*.mtx.gz
+*.zip
+*.tar
+*.tar.gz
+*.sif
+*.simg
+*.img
+# Allow tiny example/test fixtures only in tests/fixtures
+!tests/fixtures/**
+
+# ---------- Config and secrets ----------
+config/config.yaml
+.env
+*.pem
+*.key
+credentials*
+*token*
+
+# ---------- R ----------
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+renv/library/
+renv/staging/
+renv/local/
+renv/cellar/
+renv/python/
+*_cache/
+*_files/
+*.html
+*.pdf
+!docs/**/*.pdf
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+~$*
+.vscode/
+.idea/
+*.swp
+# Cloud-sync junk
+*conflicted copy*
+*-conflict-*
